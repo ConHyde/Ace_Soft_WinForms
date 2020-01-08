@@ -73,7 +73,17 @@
             this.dtLast_Contacted = new System.Windows.Forms.DateTimePicker();
             this.btnLicenseChecked = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ckClass1 = new System.Windows.Forms.CheckBox();
+            this.ckMorning = new System.Windows.Forms.CheckBox();
+            this.ckTramping = new System.Windows.Forms.CheckBox();
+            this.ckMultidrop = new System.Windows.Forms.CheckBox();
+            this.ckClass2 = new System.Windows.Forms.CheckBox();
+            this.ckNight = new System.Windows.Forms.CheckBox();
+            this.ckNightOut = new System.Windows.Forms.CheckBox();
+            this.ckTrunking = new System.Windows.Forms.CheckBox();
+            this.ckProspect = new System.Windows.Forms.CheckBox();
             this.ckArchived = new System.Windows.Forms.CheckBox();
+            this.lblProspect = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,18 +119,18 @@
             this.lblSurname.AutoSize = true;
             this.lblSurname.Location = new System.Drawing.Point(4, 24);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(52, 13);
+            this.lblSurname.Size = new System.Drawing.Size(56, 13);
             this.lblSurname.TabIndex = 5;
-            this.lblSurname.Text = "Surname:";
+            this.lblSurname.Text = "Surname*:";
             // 
             // lblForename
             // 
             this.lblForename.AutoSize = true;
             this.lblForename.Location = new System.Drawing.Point(4, 50);
             this.lblForename.Name = "lblForename";
-            this.lblForename.Size = new System.Drawing.Size(68, 13);
+            this.lblForename.Size = new System.Drawing.Size(72, 13);
             this.lblForename.TabIndex = 6;
-            this.lblForename.Text = "Forename(s):";
+            this.lblForename.Text = "Forename(s)*:";
             // 
             // lblNI_Num
             // 
@@ -162,9 +172,9 @@
             this.lblCity.AutoSize = true;
             this.lblCity.Location = new System.Drawing.Point(4, 103);
             this.lblCity.Name = "lblCity";
-            this.lblCity.Size = new System.Drawing.Size(27, 13);
+            this.lblCity.Size = new System.Drawing.Size(31, 13);
             this.lblCity.TabIndex = 11;
-            this.lblCity.Text = "City:";
+            this.lblCity.Text = "City*:";
             // 
             // txtCity
             // 
@@ -214,9 +224,9 @@
             this.lblStaffContacted.AutoSize = true;
             this.lblStaffContacted.Location = new System.Drawing.Point(4, 183);
             this.lblStaffContacted.Name = "lblStaffContacted";
-            this.lblStaffContacted.Size = new System.Drawing.Size(84, 13);
+            this.lblStaffContacted.Size = new System.Drawing.Size(88, 13);
             this.lblStaffContacted.TabIndex = 17;
-            this.lblStaffContacted.Text = "Staff Contacted:";
+            this.lblStaffContacted.Text = "Staff Contacted*:";
             // 
             // cmbStaffContacted
             // 
@@ -231,9 +241,9 @@
             this.lblMobile.AutoSize = true;
             this.lblMobile.Location = new System.Drawing.Point(4, 210);
             this.lblMobile.Name = "lblMobile";
-            this.lblMobile.Size = new System.Drawing.Size(41, 13);
+            this.lblMobile.Size = new System.Drawing.Size(45, 13);
             this.lblMobile.TabIndex = 20;
-            this.lblMobile.Text = "Mobile:";
+            this.lblMobile.Text = "Mobile*:";
             // 
             // txtMobile
             // 
@@ -451,6 +461,15 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.ckClass1);
+            this.panel1.Controls.Add(this.ckMorning);
+            this.panel1.Controls.Add(this.ckTramping);
+            this.panel1.Controls.Add(this.ckMultidrop);
+            this.panel1.Controls.Add(this.ckClass2);
+            this.panel1.Controls.Add(this.ckNight);
+            this.panel1.Controls.Add(this.ckNightOut);
+            this.panel1.Controls.Add(this.ckTrunking);
+            this.panel1.Controls.Add(this.ckProspect);
             this.panel1.Controls.Add(this.ckArchived);
             this.panel1.Controls.Add(this.btnLicenseChecked);
             this.panel1.Controls.Add(this.dtLast_Contacted);
@@ -496,10 +515,102 @@
             this.panel1.Controls.Add(this.lblSurname);
             this.panel1.Controls.Add(this.txtForename);
             this.panel1.Controls.Add(this.txtSurname);
-            this.panel1.Location = new System.Drawing.Point(8, 12);
+            this.panel1.Location = new System.Drawing.Point(27, 45);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(732, 441);
             this.panel1.TabIndex = 55;
+            // 
+            // ckClass1
+            // 
+            this.ckClass1.AutoSize = true;
+            this.ckClass1.Location = new System.Drawing.Point(465, 286);
+            this.ckClass1.Name = "ckClass1";
+            this.ckClass1.Size = new System.Drawing.Size(57, 17);
+            this.ckClass1.TabIndex = 65;
+            this.ckClass1.Text = "Class1";
+            this.ckClass1.UseVisualStyleBackColor = true;
+            // 
+            // ckMorning
+            // 
+            this.ckMorning.AutoSize = true;
+            this.ckMorning.Location = new System.Drawing.Point(465, 308);
+            this.ckMorning.Name = "ckMorning";
+            this.ckMorning.Size = new System.Drawing.Size(64, 17);
+            this.ckMorning.TabIndex = 64;
+            this.ckMorning.Text = "Morning";
+            this.ckMorning.UseVisualStyleBackColor = true;
+            // 
+            // ckTramping
+            // 
+            this.ckTramping.AutoSize = true;
+            this.ckTramping.Location = new System.Drawing.Point(465, 331);
+            this.ckTramping.Name = "ckTramping";
+            this.ckTramping.Size = new System.Drawing.Size(70, 17);
+            this.ckTramping.TabIndex = 63;
+            this.ckTramping.Text = "Tramping";
+            this.ckTramping.UseVisualStyleBackColor = true;
+            // 
+            // ckMultidrop
+            // 
+            this.ckMultidrop.AutoSize = true;
+            this.ckMultidrop.Location = new System.Drawing.Point(465, 354);
+            this.ckMultidrop.Name = "ckMultidrop";
+            this.ckMultidrop.Size = new System.Drawing.Size(71, 17);
+            this.ckMultidrop.TabIndex = 62;
+            this.ckMultidrop.Text = "MultiDrop";
+            this.ckMultidrop.UseVisualStyleBackColor = true;
+            // 
+            // ckClass2
+            // 
+            this.ckClass2.AutoSize = true;
+            this.ckClass2.Location = new System.Drawing.Point(554, 283);
+            this.ckClass2.Name = "ckClass2";
+            this.ckClass2.Size = new System.Drawing.Size(57, 17);
+            this.ckClass2.TabIndex = 61;
+            this.ckClass2.Text = "Class2";
+            this.ckClass2.UseVisualStyleBackColor = true;
+            // 
+            // ckNight
+            // 
+            this.ckNight.AutoSize = true;
+            this.ckNight.Location = new System.Drawing.Point(554, 306);
+            this.ckNight.Name = "ckNight";
+            this.ckNight.Size = new System.Drawing.Size(51, 17);
+            this.ckNight.TabIndex = 60;
+            this.ckNight.Text = "Night";
+            this.ckNight.UseVisualStyleBackColor = true;
+            // 
+            // ckNightOut
+            // 
+            this.ckNightOut.AutoSize = true;
+            this.ckNightOut.Location = new System.Drawing.Point(554, 329);
+            this.ckNightOut.Name = "ckNightOut";
+            this.ckNightOut.Size = new System.Drawing.Size(68, 17);
+            this.ckNightOut.TabIndex = 59;
+            this.ckNightOut.Text = "NightOut";
+            this.ckNightOut.UseVisualStyleBackColor = true;
+            // 
+            // ckTrunking
+            // 
+            this.ckTrunking.AutoSize = true;
+            this.ckTrunking.Location = new System.Drawing.Point(554, 352);
+            this.ckTrunking.Name = "ckTrunking";
+            this.ckTrunking.Size = new System.Drawing.Size(68, 17);
+            this.ckTrunking.TabIndex = 58;
+            this.ckTrunking.Text = "Trunking";
+            this.ckTrunking.UseVisualStyleBackColor = true;
+            // 
+            // ckProspect
+            // 
+            this.ckProspect.AutoSize = true;
+            this.ckProspect.Enabled = false;
+            this.ckProspect.Location = new System.Drawing.Point(341, 389);
+            this.ckProspect.Name = "ckProspect";
+            this.ckProspect.Size = new System.Drawing.Size(68, 17);
+            this.ckProspect.TabIndex = 56;
+            this.ckProspect.Text = "Prospect";
+            this.ckProspect.UseVisualStyleBackColor = true;
+            this.ckProspect.CheckedChanged += new System.EventHandler(this.ckProspect_CheckedChanged);
             // 
             // ckArchived
             // 
@@ -511,17 +622,30 @@
             this.ckArchived.Text = "Archive";
             this.ckArchived.UseVisualStyleBackColor = true;
             // 
+            // lblProspect
+            // 
+            this.lblProspect.AutoSize = true;
+            this.lblProspect.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProspect.Location = new System.Drawing.Point(327, 9);
+            this.lblProspect.Name = "lblProspect";
+            this.lblProspect.Size = new System.Drawing.Size(123, 25);
+            this.lblProspect.TabIndex = 66;
+            this.lblProspect.Text = "*Prospect*";
+            this.lblProspect.Visible = false;
+            // 
             // DriverForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 515);
+            this.Controls.Add(this.lblProspect);
             this.Controls.Add(this.panel1);
             this.Name = "DriverForm";
             this.Text = "DriverForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -573,5 +697,15 @@
         private System.Windows.Forms.Button btnLicenseChecked;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.CheckBox ckArchived;
+        private System.Windows.Forms.CheckBox ckProspect;
+        private System.Windows.Forms.CheckBox ckClass1;
+        private System.Windows.Forms.CheckBox ckMorning;
+        private System.Windows.Forms.CheckBox ckTramping;
+        private System.Windows.Forms.CheckBox ckMultidrop;
+        private System.Windows.Forms.CheckBox ckClass2;
+        private System.Windows.Forms.CheckBox ckNight;
+        private System.Windows.Forms.CheckBox ckNightOut;
+        private System.Windows.Forms.CheckBox ckTrunking;
+        private System.Windows.Forms.Label lblProspect;
     }
 }

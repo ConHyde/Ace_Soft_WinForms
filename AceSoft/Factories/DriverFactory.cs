@@ -64,6 +64,7 @@ namespace AceSoft
                     {
                         try
                         {
+                            driver.Employee = null;
                             db.Drivers.Attach(driver);
                             db.Entry(driver).State = EntityState.Modified;
                             db.SaveChanges();
