@@ -87,7 +87,6 @@
             this.ckArchived.TabIndex = 3;
             this.ckArchived.Text = "Show Archived";
             this.ckArchived.UseVisualStyleBackColor = true;
-            this.ckArchived.CheckedChanged += new System.EventHandler(this.ckArchived_CheckedChanged);
             // 
             // ckProspects
             // 
