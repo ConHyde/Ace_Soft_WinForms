@@ -45,7 +45,9 @@ namespace AceSoft
                         Prospect = d.Prospect,
                         Archived = d.Archived
 
-                    }).ToList();                    grdDrivers.DataSource = drivers.Where(d => (d.Prospect == _prospects)).ToList();
+                    }).ToList();                   
+                    
+                    grdDrivers.DataSource = drivers.Where(d => (d.Prospect == _prospects)).ToList();
 
                 }
             }
