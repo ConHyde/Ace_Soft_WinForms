@@ -50,6 +50,7 @@
             this.btnEmployees.TabIndex = 1;
             this.btnEmployees.Text = "Employees";
             this.btnEmployees.UseVisualStyleBackColor = true;
+            this.btnEmployees.Visible = false;
             this.btnEmployees.Click += new System.EventHandler(this.btnEmployees_Click);
             // 
             // Main
