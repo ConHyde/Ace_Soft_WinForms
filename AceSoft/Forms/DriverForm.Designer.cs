@@ -84,6 +84,8 @@
             this.ckProspect = new System.Windows.Forms.CheckBox();
             this.ckArchived = new System.Windows.Forms.CheckBox();
             this.lblProspect = new System.Windows.Forms.Label();
+            this.rtxtNotes = new System.Windows.Forms.RichTextBox();
+            this.lblNotes = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -461,6 +463,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblNotes);
+            this.panel1.Controls.Add(this.rtxtNotes);
             this.panel1.Controls.Add(this.ckClass1);
             this.panel1.Controls.Add(this.ckMorning);
             this.panel1.Controls.Add(this.ckTramping);
@@ -517,7 +521,7 @@
             this.panel1.Controls.Add(this.txtSurname);
             this.panel1.Location = new System.Drawing.Point(27, 45);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(732, 441);
+            this.panel1.Size = new System.Drawing.Size(1080, 441);
             this.panel1.TabIndex = 55;
             // 
             // ckClass1
@@ -633,11 +637,29 @@
             this.lblProspect.Text = "*Prospect*";
             this.lblProspect.Visible = false;
             // 
+            // rtxtNotes
+            // 
+            this.rtxtNotes.Location = new System.Drawing.Point(748, 36);
+            this.rtxtNotes.MaxLength = 500;
+            this.rtxtNotes.Name = "rtxtNotes";
+            this.rtxtNotes.Size = new System.Drawing.Size(307, 381);
+            this.rtxtNotes.TabIndex = 66;
+            this.rtxtNotes.Text = "";
+            // 
+            // lblNotes
+            // 
+            this.lblNotes.AutoSize = true;
+            this.lblNotes.Location = new System.Drawing.Point(757, 21);
+            this.lblNotes.Name = "lblNotes";
+            this.lblNotes.Size = new System.Drawing.Size(38, 13);
+            this.lblNotes.TabIndex = 67;
+            this.lblNotes.Text = "Notes:";
+            // 
             // DriverForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 515);
+            this.ClientSize = new System.Drawing.Size(1203, 515);
             this.Controls.Add(this.lblProspect);
             this.Controls.Add(this.panel1);
             this.Name = "DriverForm";
@@ -707,5 +729,7 @@
         private System.Windows.Forms.CheckBox ckNightOut;
         private System.Windows.Forms.CheckBox ckTrunking;
         private System.Windows.Forms.Label lblProspect;
+        private System.Windows.Forms.Label lblNotes;
+        private System.Windows.Forms.RichTextBox rtxtNotes;
     }
 }

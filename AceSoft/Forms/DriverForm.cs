@@ -191,6 +191,7 @@ namespace AceSoft
                 ckNight.Checked = _driver.Night;
                 ckNightOut.Checked = _driver.NightOut;
                 ckTramping.Checked = _driver.Tramping;
+                rtxtNotes.Text = _driver.Notes;
             }
             if(_driver.Prospect || _driver.Id == 0)
             {
@@ -242,6 +243,7 @@ namespace AceSoft
                 _driver.Night = ckNight.Checked;
                 _driver.NightOut = ckNightOut.Checked;
                 _driver.Tramping = ckTramping.Checked;
+                _driver.Notes = rtxtNotes.Text;
 
                 DriverFactory.Instance.UpsertDriver(_driver);
                 this.Close();
