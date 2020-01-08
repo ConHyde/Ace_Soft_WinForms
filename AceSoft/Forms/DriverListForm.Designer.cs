@@ -31,9 +31,8 @@
             this.grdDrivers = new System.Windows.Forms.DataGridView();
             this.btnAddDriver = new System.Windows.Forms.Button();
             this.pnlDriverList = new System.Windows.Forms.Panel();
-            this.ckArchived = new System.Windows.Forms.CheckBox();
-            this.ckProspects = new System.Windows.Forms.CheckBox();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.ckProspects = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdDrivers)).BeginInit();
             this.pnlDriverList.SuspendLayout();
             this.SuspendLayout();
@@ -69,7 +68,6 @@
             // pnlDriverList
             // 
             this.pnlDriverList.Controls.Add(this.btnRefresh);
-            this.pnlDriverList.Controls.Add(this.ckArchived);
             this.pnlDriverList.Controls.Add(this.ckProspects);
             this.pnlDriverList.Controls.Add(this.btnAddDriver);
             this.pnlDriverList.Controls.Add(this.grdDrivers);
@@ -78,15 +76,15 @@
             this.pnlDriverList.Size = new System.Drawing.Size(1051, 616);
             this.pnlDriverList.TabIndex = 2;
             // 
-            // ckArchived
+            // btnRefresh
             // 
-            this.ckArchived.AutoSize = true;
-            this.ckArchived.Location = new System.Drawing.Point(293, 17);
-            this.ckArchived.Name = "ckArchived";
-            this.ckArchived.Size = new System.Drawing.Size(98, 17);
-            this.ckArchived.TabIndex = 3;
-            this.ckArchived.Text = "Show Archived";
-            this.ckArchived.UseVisualStyleBackColor = true;
+            this.btnRefresh.Location = new System.Drawing.Point(406, 3);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(65, 43);
+            this.btnRefresh.TabIndex = 4;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // ckProspects
             // 
@@ -98,16 +96,6 @@
             this.ckProspects.Text = "Show Prospects";
             this.ckProspects.UseVisualStyleBackColor = true;
             this.ckProspects.CheckedChanged += new System.EventHandler(this.ckProspects_CheckedChanged);
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Location = new System.Drawing.Point(406, 3);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(65, 43);
-            this.btnRefresh.TabIndex = 4;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // DriverListForm
             // 
@@ -131,7 +119,6 @@
         private System.Windows.Forms.DataGridView grdDrivers;
         private System.Windows.Forms.Button btnAddDriver;
         private System.Windows.Forms.Panel pnlDriverList;
-        private System.Windows.Forms.CheckBox ckArchived;
         private System.Windows.Forms.CheckBox ckProspects;
         private System.Windows.Forms.Button btnRefresh;
     }
