@@ -100,12 +100,9 @@ namespace AceSoft
         private void ckProspects_CheckedChanged(object sender, EventArgs e)
         {
             _prospects = ckProspects.Checked;
-            
-        }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
             RefreshDrivers();
+            
         }
     }
 }

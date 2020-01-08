@@ -101,16 +101,16 @@ namespace AceSoft
                 errorControls.Add(cmbStaffContacted);
             }
 
-            if (!ckProspect.Checked && !_driver.Prospect)
+            if (!ckProspect.Checked && !_driver.Prospect || _driver.Id > 0 && !ckProspect.Checked)
             {
                 if (String.IsNullOrEmpty(txtAddress.Text))
                 {
                     errorControls.Add(txtAddress);
                 }
-                if (String.IsNullOrEmpty(txtEmail.Text))
-                {
-                    errorControls.Add(txtEmail);
-                }
+                //if (String.IsNullOrEmpty(txtEmail.Text))
+                //{
+                //    errorControls.Add(txtEmail);
+                //}
                 if (String.IsNullOrEmpty(txtLicenseNumber.Text))
                 {
                     errorControls.Add(txtLicenseNumber);
@@ -127,26 +127,26 @@ namespace AceSoft
                 {
                     errorControls.Add(txtPostcode);
                 }
-                if (String.IsNullOrEmpty(txtTelephone.Text))
-                {
-                    errorControls.Add(txtTelephone);
-                }
-                if (dtCPC_Expiry.Value.Date == DateTime.Now.Date)
-                {
-                    errorControls.Add(dtCPC_Expiry);
-                }
-                if (dtDigi_Expiry.Value.Date == DateTime.Now.Date)
-                {
-                    errorControls.Add(dtDigi_Expiry);
-                }
-                if (dtLicenseExpiry.Value.Date == DateTime.Now.Date)
-                {
-                    errorControls.Add(dtLicenseExpiry);
-                }
-                if (dtDoB.Value.Date == DateTime.Now.Date)
-                {
-                    errorControls.Add(dtDoB);
-                }
+                //if (String.IsNullOrEmpty(txtTelephone.Text))
+                //{
+                //    errorControls.Add(txtTelephone);
+                //}
+                //if (dtCPC_Expiry.Value.Date == DateTime.Now.Date)
+                //{
+                //    errorControls.Add(dtCPC_Expiry);
+                //}
+                //if (dtDigi_Expiry.Value.Date == DateTime.Now.Date)
+                //{
+                //    errorControls.Add(dtDigi_Expiry);
+                //}
+                //if (dtLicenseExpiry.Value.Date == DateTime.Now.Date)
+                //{
+                //    errorControls.Add(dtLicenseExpiry);
+                //}
+                //if (dtDoB.Value.Date == DateTime.Now.Date)
+                //{
+                //    errorControls.Add(dtDoB);
+                //}
             }
 
             result = SetControlError(errorControls);
@@ -265,8 +265,6 @@ namespace AceSoft
 
         private void ckProspect_CheckedChanged(object sender, EventArgs e)
         {
-            int checkProspect = 0;
-
             if (!ValidateEntry())
             {
                 ckProspect.Checked = true;
