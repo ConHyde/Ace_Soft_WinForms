@@ -230,7 +230,7 @@ namespace AceSoft
                 _driver.License_Next_Check = dtLicenseChecked.Value.AddDays(90);
                 _driver.License_Valid = dtLicenseValid.Value;
                 _driver.EmployeeId = Int32.Parse(cmbStaffContacted.SelectedValue.ToString());
-                _driver.Employee.Id = Int32.Parse(cmbStaffContacted.SelectedValue.ToString());
+                //_driver.Employee.Id = Int32.Parse(cmbStaffContacted.SelectedValue.ToString());
                 _driver.Last_Contact = dtLast_Contacted.Value.Date;
                 _driver.Car_Owned = ckOwnCar.Checked;
                 _driver.Archived = ckArchived.Checked;
