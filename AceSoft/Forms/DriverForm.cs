@@ -52,6 +52,7 @@ namespace AceSoft
                 else
                 {
                     cmbStaffContacted.SelectedValue = 1;
+
                 }
             }
 
@@ -196,6 +197,7 @@ namespace AceSoft
                 BackColor = Color.LightYellow;
                 lblProspect.Visible = true;
                 ckProspect.Enabled = true;
+                ckProspect.Checked = true;
             }
 
         }
