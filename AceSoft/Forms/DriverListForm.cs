@@ -45,9 +45,7 @@ namespace AceSoft
                         Prospect = d.Prospect,
                         Archived = d.Archived
 
-                    }).ToList();
-
-                    grdDrivers.DataSource = drivers.Where(d => (d.Prospect == _prospects)).ToList();
+                    }).ToList();                    grdDrivers.DataSource = drivers.Where(d => (d.Prospect == _prospects)).ToList();
 
                 }
             }
@@ -101,11 +99,6 @@ namespace AceSoft
         {
             _prospects = ckProspects.Checked;
             
-        }
-
-        private void ckArchived_CheckedChanged(object sender, EventArgs e)
-        {
-            _archived = ckArchived.Checked;
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
