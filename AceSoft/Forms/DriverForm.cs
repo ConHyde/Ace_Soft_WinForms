@@ -20,8 +20,7 @@ namespace AceSoft
             InitializeComponent();
             Text = base.Text;
             LoadDriver(driverId);
-            BindControls();
-            
+            BindControls();   
         }
 
         protected void BindControls()
@@ -148,10 +147,30 @@ namespace AceSoft
                 //    errorControls.Add(dtDoB);
                 //}
             }
-
             result = SetControlError(errorControls);
 
-                    return result;
+            if (_driver.Id == 0)
+            {
+                result = CheckDuplicateDriver();
+            }
+
+            return result;
+        }
+
+        private bool CheckDuplicateDriver()
+        {
+            bool result = true;
+
+            var query = DriverFactory.Instance.GetDrivers().Where(d => d.Surname == txtSurname.Text)
+                                                           .Where(d => d.Mobile == txtMobile.Text).ToList();
+
+            if(query.Count > 0)
+            {
+                result = false;
+                MessageBox.Show("This driver already exists!", "Warning!");
+            }
+
+            return result;
         }
 
         private void LoadDriver(int driverId)
