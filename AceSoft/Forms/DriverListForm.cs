@@ -16,7 +16,6 @@ namespace AceSoft
     {
         private int driverSelected = 0;
         private bool _prospects = false;
-        private bool _archived = false;
         public DriverListForm()
         {
             this.Text = base.Text;
