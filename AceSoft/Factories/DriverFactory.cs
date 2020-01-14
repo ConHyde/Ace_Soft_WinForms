@@ -51,6 +51,13 @@ namespace AceSoft
             }
         }
 
+        public bool IsDuplicate(string surname, string mobile)
+        {
+            DriverController controller = new DriverController();
+
+            return controller.IsDuplicate(surname, mobile);
+        }
+
 
         public void UpsertDriver(Driver driver)
         {

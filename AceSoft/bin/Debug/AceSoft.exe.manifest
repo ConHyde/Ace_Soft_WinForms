@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qgDKxvqZepzCD6iDf9ZJEoLmgmcT9ZWbpTX8KK60PsY=</dsig:DigestValue>
+        <dsig:DigestValue>IY2O5UiLOz/dAV45f99jowCMpvw/XYaZ+sohsXnmK+w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AceSoftServices.dll" size="60416">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AceSoftServices.dll" size="60928">
       <assemblyIdentity name="AceSoftServices" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oJm00ymeDh0m/OyKJ55OaE3tJ/wlWD/4LMQFO5YVeMw=</dsig:DigestValue>
+        <dsig:DigestValue>Rvh13wrvSebXQb6GdcUqSsBdVHHzjOIE/XuCjuD8KG4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

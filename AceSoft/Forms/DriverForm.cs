@@ -159,18 +159,19 @@ namespace AceSoft
 
         private bool CheckDuplicateDriver()
         {
-            bool result = true;
+            bool result = false; 
 
-            var query = DriverFactory.Instance.GetDrivers().Where(d => d.Surname == txtSurname.Text)
-                                                           .Where(d => d.Mobile == txtMobile.Text).ToList();
-
-            if(query.Count > 0)
+            if (txtSurname.Text != null && txtMobile.Text != null)
             {
-                result = false;
-                MessageBox.Show("This driver already exists!", "Warning!");
+                result = DriverFactory.Instance.IsDuplicate(txtSurname.Text, txtMobile.Text);
+
+                if (result)
+                {
+                    MessageBox.Show("This driver already exists!", "ERROR");
+                }
             }
 
-            return result;
+                return result;
         }
 
         private void LoadDriver(int driverId)
@@ -219,7 +220,6 @@ namespace AceSoft
                 ckProspect.Enabled = true;
                 ckProspect.Checked = true;
             }
-
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -269,7 +269,7 @@ namespace AceSoft
             }
             else
             {
-                MessageBox.Show("Please fill all fields before saving", "Eat my smelly cunt");
+                MessageBox.Show("Please fill all fields before saving", "Warning");
             }
 
         }
