@@ -151,7 +151,7 @@ namespace AceSoft
 
             if (_driver.Id == 0)
             {
-                result = CheckDuplicateDriver();
+                result = !CheckDuplicateDriver();
             }
 
             return result;
