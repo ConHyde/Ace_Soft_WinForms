@@ -35,6 +35,7 @@ namespace AceSoft
                         Surname = d.Surname,
                         Forname = d.Forename,
                         Mobile = d.Mobile,
+                        City = d.City,
                         LastContacted = d.Last_Contact,
                         LastSpokeTo = d.Employee.Name,
                         CPCExpiry = d.CPC_Expiry,
@@ -42,7 +43,7 @@ namespace AceSoft
                         LicenseExpiry = d.License_Expiry,
                         LicenseNextCheck = d.License_Next_Check,
                         Prospect = d.Prospect,
-                        Archived = d.Archived
+                        Archived = d.Archived                        
 
                     }).ToList();                   
                     
